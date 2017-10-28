@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+    <title>Catcup</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+</head>
+<body>
+<div class="gameWrapper">
+    <canvas id="gameCanvas" width="500" height="500"></canvas>
+    <div id="startScreen" class="fullView" style="cursor: none">
+        <div class="headline textfield" style="cursor: none">
+            Click to take your chance!
+        </div>
+        <div class="textfield optionField">
+            Catchcup
+        </div>
+    </div>
+    <div id="endScreen" class="fullView">
+        <div class="headline textfield">
+            Game Over!
+        </div>
+        <div class="score textfield">
+            <span id="userScore"></span> Catches
+        </div>
+        <div class="textfield">
+            Your Name
+        </div>
+        <div class="textfield">
+            <input maxlength="15" id="usernameInput" class="inputUsername" type="text" placeholder="please type name" onkeyup="return window.checkNameInput(event)">
+            <div id="usernameInputSubmit" class="addHighscore" onclick="window.submitHighscore()">add</div>
+            <span id="usernameConfirmation">Highscore added!</span>
+        </div>
+        <div class="textfield optionField" onclick="window.initGame()">
+            * play again
+        </div>
+        <div class="textfield optionField" onclick="window.showHighscore()">
+            show Highscores
+        </div>
+    </div>
+    <div id="highscoresScreen" class="fullView">
+        <div class="headline textfield">
+            Highscore
+        </div>
+        <div class="textfield" id="highscoreTable"></div>
+        <div class="textfield optionField" onclick="window.showEndScreen()">
+            <img src="img/game-back.svg" alt="Back to Website"> back
+        </div>
+    </div>
+    <div id="marqueeText">
+        <div>
+            <span>
+               &euro;&euro;&euro; sky high poppin' &euro;&euro;&euro; catchcup &euro;&euro;&euro; from Huangart with love &euro;&euro;&euro; catchcup &euro;&euro;&euro; game of live €€€ all high rollin'
+            </span>
+            <span>
+               &euro;&euro;&euro; sky high poppin' &euro;&euro;&euro; catchcup &euro;&euro;&euro; from Huangart with love &euro;&euro;&euro; catchcup &euro;&euro;&euro; game of live €€€ all high rollin'
+            </span>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/build/app.js"></script>
+</body>
+</html>

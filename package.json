@@ -1,0 +1,41 @@
+{
+  "name": "catchcup",
+  "version": "1.0.0",
+  "description": "JS game inspired by \"catch the ball\" real life toy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turboLoop/catchcup.git"
+  },
+  "keywords": [
+    "javscript",
+    "game",
+    "canvas",
+    "physics"
+  ],
+  "author": "turboLoop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/turboLoop/catchcup/issues"
+  },
+  "homepage": "https://github.com/turboLoop/catchcup#readme",
+  "devDependencies": {
+    "browser-sync": "^2.17.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-bower": "0.0.13",
+    "gulp-clean-css": "^3.4.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.3.0",
+    "gulp-main-bower-files": "^1.5.3",
+    "gulp-minify": "^1.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}
